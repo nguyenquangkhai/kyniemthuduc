@@ -1,0 +1,130 @@
+body {
+	font-family: "Arial", Gadget, sans-serif;
+	background-color:#fff;
+	margin:0;
+	background: url(../images/body-pattern.png) repeat;
+}
+
+header{
+	background-color:#fff;
+	width:100%;
+	overflow:hidden;
+	height:93px;
+}
+
+	#logo {
+		padding-left:25px;
+		position: fixed;
+		left: 0px;
+		top: 0px;
+	}
+	
+	#toolbox{
+		padding-right:25px;
+		position:fixed;
+		right:0px;
+		text-align:right;
+		top:0px;
+		width:200px;
+	}
+	
+		#toolbox ul li{
+			list-style:none
+		}
+		
+			#toolbox ul li a{color:inherit;}
+			#toolbox ul li a:hover{color:inherit; text-decoration:underline; cursor:pointer}
+			#toolbox ul li a:visited{color:inherit;}
+	
+#wrapper #container {
+	
+	width:100%;
+	position: absolute;
+	overflow:hidden;
+}
+
+	#container #timeline {
+		height: 40px;
+	}
+
+	#container #imageholder{
+		background-color:#fff;
+		height:400px;
+		position:relative;
+	}
+	
+		#imageholder .years{
+			float:left;
+			overflow:hidden;
+			height:100%;
+			margin-right:20px;
+			border-left:#e33500 3px solid;
+			padding-left:3px;
+			position:relative;
+			z-index:5;
+		}
+	
+		#imageholder .years img{
+			float:left;
+			padding:5px 5px 0 0 ;
+			opacity:0.5;
+			transition:opacity 1s;
+			-moz-transition:opacity 1s;
+			-webkit-transition:opacity 1s;
+			position:relative;
+			width:110px;
+			height:110px;
+			border:none;
+			cursor:pointer;
+		}
+		
+		#imageholder .years img:hover{
+			opacity:1;
+		}
+		
+		div.stack{
+			overflow:hidden;
+			height:115px;
+		}
+		
+		div.yearhold{
+			width:100px;
+			height:100%;
+			background-color:#9f9f9f;
+			float:left;
+			margin-right:5px;
+			vertical-align:central;
+			font-family:"Helvetica LT Std";
+			font-size:41px;
+			color:#fff;
+			vertical-align:middle;
+			text-align:center;
+			padding-top:205px;
+		}
+		
+		#photoview{
+			overflow:hidden;
+			min-width:680px; 
+			position:fixed; 
+			left:0; 
+			z-index:10;  
+			display:none;
+		}
+		
+			#photoview #photoview_holder{
+				height:100%;
+				background-color:#eee;
+				width:675px;
+				opacity:0.8; 
+				float:left;
+			}
+			
+			#photoview #photoview_dragger{
+				background-color:#c2c2c2;
+				width:5px;
+				height:100%;
+				float:left;
+				display: table;
+				vertical-align: middle; 
+			}
+	
